@@ -1,5 +1,9 @@
 .App {
   text-align: center;
-  background-color: rgb(29, 29, 102);
+  background-color: black;
   color: white;
+}
+
+.titleHeader {
+  font-family: "Source Code Pro", cursive;
 }
