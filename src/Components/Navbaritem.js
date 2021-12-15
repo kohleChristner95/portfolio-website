@@ -1,7 +1,7 @@
 import React from "react";
 
-const Navbaritem = () => {
-  return <div>test</div>;
+const Navbaritem = ({ navbarSelection }) => {
+  return <div>{navbarSelection}</div>;
 };
 
 export default Navbaritem;
