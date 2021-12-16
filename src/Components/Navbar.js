@@ -8,7 +8,7 @@ const Navbar = ({ props }) => {
       style={{ backgroundColor: "rgb(29, 29, 102)" }}
       className="navbar navbar-collapse"
     >
-      <div className="container-fluid navbar-brand .navbar-toggle">
+      <div className="container-fluid navbar-brand navbar-toggle">
         <Navbaritem navbarSelection="Home" />
         <Navbaritem navbarSelection="Linkedin" />
         <TitleHeader className="center-block" name="Kohle Christner" />
