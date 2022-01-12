@@ -21,7 +21,7 @@ const App = () => {
             inquiries!
             <h2>Personal interests</h2>
             <div>
-              I have a beatiful wife Samantha and a 6 month old son Miles. We
+              I have a beautiful wife Samantha and a 6 month old son Miles. We
               love to do life together. It's not abnormal for us to get home
               from work and just chill on the floor while we have something
               playing on tv. Other personal interests I have are hunting, video
