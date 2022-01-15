@@ -1,4 +1,4 @@
-const Form = (props) => {
+const Contact = (props) => {
   return (
     <>
       <h1>Contact</h1>
@@ -40,4 +40,4 @@ const Form = (props) => {
   );
 };
 
-export default Form;
+export default Contact;
