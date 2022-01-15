@@ -1,7 +1,6 @@
 import Resume from "./Resume";
 import Home from "./Home";
 import Contact from "./Contact";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
