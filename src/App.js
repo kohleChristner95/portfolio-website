@@ -23,12 +23,11 @@ const App = () => {
             <a target="_blank" rel="noreferrer" href="https://fireflyint.com/">
               Firefly Integrations
             </a>
-            . Being self taught, I have a huge passion for learning and
-            expanding my programming skills. I have experience using javascript
-            with ionic capacitor as well as devops experience deploying new app
-            releases to the android and iOS stores. Please take a look at my
-            github account to see my latest projects or contact me for
-            inquiries!
+            Being self taught, I have a huge passion for learning and expanding
+            my programming skills. I have experience using javascript with ionic
+            capacitor as well as devops experience deploying new app releases to
+            the android and iOS stores. Please take a look at my github account
+            to see my latest projects or contact me for inquiries!
             <h2>Personal Interests</h2>
             <div style={{ lineHeight: 1.7 }}>
               I have a beautiful wife Samantha and a 6 month old son Miles. We
