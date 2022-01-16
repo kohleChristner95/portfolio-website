@@ -2,7 +2,7 @@ const Navbar = (props) => {
   return (
     <nav
       style={{ backgroundColor: "rgb(29, 29, 102)" }}
-      className="navbar navbar-expand-lg container-fluid"
+      className="navbar navbar-expand-md container-fluid navbar-light"
     >
       <div className="navbar-brand" style={{ fontSize: 30 }}>
         Kohle Christner
