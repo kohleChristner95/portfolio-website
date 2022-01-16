@@ -1,7 +1,3 @@
-import Resume from "./Resume";
-import Home from "./Home";
-import Contact from "./Contact";
-
 const Navbar = (props) => {
   return (
     <nav
