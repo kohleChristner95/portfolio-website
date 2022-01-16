@@ -6,7 +6,7 @@ const Navbar = (props) => {
   return (
     <nav
       style={{ backgroundColor: "rgb(29, 29, 102)" }}
-      className="navbar navbar-expand-md container-fluid"
+      className="navbar navbar-expand-lg container-fluid"
     >
       <div className="navbar-brand" style={{ fontSize: 30 }}>
         Kohle Christner
@@ -14,8 +14,8 @@ const Navbar = (props) => {
       <button
         className="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
+        data-toggle="collapse"
+        data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -45,7 +45,7 @@ const Navbar = (props) => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="./Contact" className="nav-link">
+            <a className="nav-link" href="/Contact">
               Contact
             </a>
           </li>
