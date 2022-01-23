@@ -2,8 +2,10 @@ import React from "react";
 
 const List = () => {
   return (
-    <div>
-      <div>I am the list component</div>
+    <div className="container">
+      <div>Timeline</div>
+      <div>jobTitle, Location</div>
+      <div>responsibilities</div>
     </div>
   );
 };
