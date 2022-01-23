@@ -63,11 +63,14 @@ const Main = ({ headerTitles }) => {
 
   return (
     <div>
-      {headerTitles.forEach((headerName) => {
-        console.log(headerName);
-        return <h3>{headerName}</h3>;
+      {headerTitles.map((headerName) => {
+        return (
+          <div>
+            <h3>{headerName}</h3>
+            <List />
+          </div>
+        );
       })}
-      <List />
     </div>
   );
 };
