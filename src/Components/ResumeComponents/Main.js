@@ -1,13 +1,14 @@
+/* eslint-disable no-unused-expressions */
 import React from "react";
 import List from "./List";
 
-const Main = ({ headerTitles }) => {
-  // console.log(props.headerTitles);
+const Main = (props) => {
+  const listArray = [];
   const experience = [
     {
       timeLine: "September 2020 - Present",
       jobTitle: "Software Developer",
-      company: "Firefly Integrations",
+      location: "Firefly Integrations",
       responsibilities: [
         "Programmed config files written in JSON",
         "Helped maintain mobile apps written in Angular.js combined with Ionic Capacitor for cross platform capabilities",
@@ -22,12 +23,12 @@ const Main = ({ headerTitles }) => {
       responsibilities: [
         "Inspected, serviced, and installed fire extinguishers per NFPA standards",
         "Inspected and serviced emergency lighting per NFPA standards",
-        "• Communicated with customers regarding service needs",
+        "Communicated with customers regarding service needs",
       ],
     },
     {
       timeLine: "April 2018 - April 2019",
-      jobTitle: "Assistand Service Manager",
+      jobTitle: "Assistant Service Manager",
       location: "Hawkins Water Tech.",
       responsibilities: [
         "Coordinated water softener installation schedule",
@@ -53,7 +54,7 @@ const Main = ({ headerTitles }) => {
     },
   ];
 
-  const softSkills = [
+  const skills = [
     "Problem-solving",
     "Attention to detail",
     "Clear communication",
@@ -61,14 +62,48 @@ const Main = ({ headerTitles }) => {
     "Strong desire to learn",
   ];
 
+  listArray.push(experience, education, skills);
+
+  // write mapping code and try again tomorrow
+
+  function mappingList(arg) {
+    if (arg === "Experience") {
+      for (const x of listArray) {
+        if (x.length === 3) {
+          return x.map((list) => {
+            return <List list={list} />;
+          });
+        }
+      }
+    }
+    if (arg === "Education") {
+      for (const x of listArray) {
+        if (x.length === 2) {
+          return x.map((list) => {
+            return <List list={list} />;
+          });
+        }
+      }
+    }
+    if (arg === "Skills") {
+      for (const x of listArray) {
+        if (x.length > 3) {
+          return x.map((list) => {
+            return <div>{list}</div>;
+          });
+        }
+      }
+    }
+  }
+
   return (
-    <div>
-      {headerTitles.map((headerName) => {
+    <div className="container">
+      {props.headerTitles.map((headerName) => {
         return (
-          <div>
-            <h3>{headerName}</h3>
-            <List />
-          </div>
+          <>
+            <h3 key={headerName}>{headerName}</h3>
+            {mappingList(headerName)}
+          </>
         );
       })}
     </div>
