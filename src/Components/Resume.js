@@ -1,7 +1,6 @@
 import React from "react";
 import Main from "./ResumeComponents/Main";
 import Overview from "./ResumeComponents/Overview";
-import { useState } from "react";
 
 const Resume = () => {
   const headerTitles = ["Experience", "Education", "Skills"];
