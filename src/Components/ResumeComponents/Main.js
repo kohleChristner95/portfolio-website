@@ -8,7 +8,7 @@ const Main = (props) => {
     {
       timeLine: "September 2020 - Present",
       jobTitle: "Software Developer",
-      location: "Firefly Integrations",
+      location: "Firefly Integrations - Middlebury, IN",
       responsibilities: [
         "Programmed config files written in JSON",
         "Helped maintain mobile apps written in Angular.js combined with Ionic Capacitor for cross platform capabilities",
@@ -19,7 +19,7 @@ const Main = (props) => {
     {
       timeLine: "April 2019 - September 2020",
       jobTitle: "Fire Saftety Technician",
-      location: "M&M Fire Protection & Security",
+      location: "M&M Fire Protection & Security - Goshen, IN",
       responsibilities: [
         "Inspected, serviced, and installed fire extinguishers per NFPA standards",
         "Inspected and serviced emergency lighting per NFPA standards",
@@ -29,7 +29,7 @@ const Main = (props) => {
     {
       timeLine: "April 2018 - April 2019",
       jobTitle: "Assistant Service Manager",
-      location: "Hawkins Water Tech.",
+      location: "Hawkins Water Tech. - Middlebury, IN",
       responsibilities: [
         "Coordinated water softener installation schedule",
         "Communicated with customers with questions regarding water quality needs",
@@ -64,11 +64,10 @@ const Main = (props) => {
 
   listArray.push(experience, education, skills);
 
-  // write mapping code and try again tomorrow
-
   function mappingList(arg) {
     if (arg === "Experience") {
       for (const x of listArray) {
+        console.log(x.length);
         if (x.length === 3) {
           return x.map((list) => {
             return <List list={list} />;
@@ -88,9 +87,14 @@ const Main = (props) => {
     if (arg === "Skills") {
       for (const x of listArray) {
         if (x.length > 3) {
-          return x.map((list) => {
-            return <div>{list}</div>;
-          });
+          return (
+            <div>
+              {x.map((list) => {
+                return <li className="text-start">{list}</li>;
+              })}
+              <div style={{ height: "30px" }}></div>
+            </div>
+          );
         }
       }
     }
