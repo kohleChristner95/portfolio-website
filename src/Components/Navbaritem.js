@@ -1,9 +1,9 @@
 import React from "react";
 
-const Navbaritem = (props) => {
+const Navbaritem = ({ link, navbarSelection }) => {
   return (
-    <a href={props.link} className="badge">
-      {props.navbarSelection}
+    <a href={link} className="badge">
+      {navbarSelection}
     </a>
   );
 };

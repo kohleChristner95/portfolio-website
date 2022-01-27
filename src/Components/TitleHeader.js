@@ -1,7 +1,7 @@
 import React from "react";
 
-const TitleHeader = (props) => {
-  return <div className="titleHeader">{props.name}</div>;
+const TitleHeader = ({ name }) => {
+  return <div className="titleHeader">{name}</div>;
 };
 
 export default TitleHeader;

@@ -1,8 +1,6 @@
 import React from "react";
 
-const List = (props) => {
-  console.log("look here", props.list);
-  let list = props.list;
+const List = ({ list }) => {
   return (
     <div key={list.jobTitle} className="container text-start">
       <div className="ms-4">{list.timeLine}</div>

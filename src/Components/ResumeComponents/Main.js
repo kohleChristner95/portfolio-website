@@ -2,7 +2,7 @@
 import React from "react";
 import List from "./List";
 
-const Main = (props) => {
+const Main = ({ headerTitles }) => {
   const listArray = [];
   const experience = [
     {
@@ -102,7 +102,7 @@ const Main = (props) => {
 
   return (
     <div className="container-fluid">
-      {props.headerTitles.map((headerName) => {
+      {headerTitles.map((headerName) => {
         return (
           <>
             <h3 className="container text-start mb-4" key={headerName}>
