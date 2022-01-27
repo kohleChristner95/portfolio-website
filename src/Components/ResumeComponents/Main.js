@@ -88,9 +88,9 @@ const Main = (props) => {
       for (const x of listArray) {
         if (x.length > 3) {
           return (
-            <div>
+            <div className="container">
               {x.map((list) => {
-                return <li className="text-start">{list}</li>;
+                return <li className="text-start ms-5">{list}</li>;
               })}
               <div style={{ height: "30px" }}></div>
             </div>
@@ -101,11 +101,13 @@ const Main = (props) => {
   }
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       {props.headerTitles.map((headerName) => {
         return (
           <>
-            <h3 key={headerName}>{headerName}</h3>
+            <h3 className="container text-start mb-4" key={headerName}>
+              {headerName}
+            </h3>
             {mappingList(headerName)}
           </>
         );
