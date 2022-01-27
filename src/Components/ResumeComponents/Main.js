@@ -8,18 +8,18 @@ const Main = ({ headerTitles }) => {
     {
       timeLine: "September 2020 - Present",
       jobTitle: "Software Developer",
-      location: "Firefly Integrations - Middlebury, IN",
+      location: "Firefly Integrations",
       responsibilities: [
         "Programmed config files written in JSON",
-        "Helped maintain mobile apps written in Angular.js combined with Ionic Capacitor for cross platform capabilities",
-        "Helped upload new builds and test flights to both the google play store and app store",
+        "Maintained cross platform mobile apps written in Angular.js and Ionic Capacitor",
+        "Uploaded new builds and test flights to both the google play store and app store",
         "Started as an entry-level developer and worked up to a team lead role within 10 months",
       ],
     },
     {
       timeLine: "April 2019 - September 2020",
       jobTitle: "Fire Saftety Technician",
-      location: "M&M Fire Protection & Security - Goshen, IN",
+      location: "M&M Fire Protection & Security",
       responsibilities: [
         "Inspected, serviced, and installed fire extinguishers per NFPA standards",
         "Inspected and serviced emergency lighting per NFPA standards",
@@ -29,7 +29,7 @@ const Main = ({ headerTitles }) => {
     {
       timeLine: "April 2018 - April 2019",
       jobTitle: "Assistant Service Manager",
-      location: "Hawkins Water Tech. - Middlebury, IN",
+      location: "Hawkins Water Tech.",
       responsibilities: [
         "Coordinated water softener installation schedule",
         "Communicated with customers with questions regarding water quality needs",
@@ -105,7 +105,7 @@ const Main = ({ headerTitles }) => {
       {headerTitles.map((headerName) => {
         return (
           <>
-            <h3 className="container text-start mb-4" key={headerName}>
+            <h3 className="container text-start mb-3" key={headerName}>
               {headerName}
             </h3>
             {mappingList(headerName)}

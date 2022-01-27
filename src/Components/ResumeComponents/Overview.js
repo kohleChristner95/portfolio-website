@@ -3,8 +3,8 @@ const Overview = () => {
     <div>
       <h1>Kohle Christner</h1>
       <div>Shipshewana, IN • 260-360-4793</div>
-      <h6 className="mb-5">kohlechristner95@gmail.com</h6>
-      <div className="container-sm my-5">
+      <h6 className="mb-4">kohlechristner95@gmail.com</h6>
+      <div className="container-sm my-4">
         Self-driven, focused, and goal-oriented employee. Well regarded by peers
         by outstanding work ethic, close attention-to-detail, and exceptional
         follow through abilities. Proven through work experience with the
