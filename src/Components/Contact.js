@@ -1,4 +1,4 @@
-const Contact = (props) => {
+const Contact = () => {
   return (
     <>
       <h1>Contact</h1>

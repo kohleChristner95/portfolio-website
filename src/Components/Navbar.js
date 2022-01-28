@@ -1,4 +1,4 @@
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: "rgb(29, 29, 102)" }}
