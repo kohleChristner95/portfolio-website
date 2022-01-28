@@ -1,4 +1,3 @@
-import React from "react";
 import Main from "./ResumeComponents/Main";
 import Overview from "./ResumeComponents/Overview";
 
