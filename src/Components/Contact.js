@@ -1,11 +1,18 @@
 import { useForm, ValidationError } from "@formspree/react";
-import Home from "./Home";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xknyjnww");
+
   if (state.succeeded) {
-    return <p>Thanks for the message!</p>;
+    return (
+      <div className="center-screen empty-color full-height">
+        <p>
+          Thanks for the message! I'll get back to you within 1-2 business days.
+        </p>
+      </div>
+    );
   }
+
   return (
     <div className="center-screen empty-color">
       <form className="empty-color row center" onSubmit={handleSubmit}>
