@@ -11,8 +11,7 @@ const Home = () => {
         />
       </div>
       <div className="label col-sm-4">
-        <h1>Home</h1>
-        <div style={{ lineHeight: 1.7 }}>
+        <div className="my-4" style={{ lineHeight: 1.7 }}>
           Hi! Welcome to my website portfolio. My name is Kohle Christner and
           I'm a software developer based out of Shipshewana, Indiana. I
           currently help maintain several mobile apps at a RV tech company in
@@ -25,7 +24,7 @@ const Home = () => {
           capacitor as well as devops experience deploying new app releases to
           the android and iOS stores. Please take a look at my github account to
           see my latest projects or contact me for inquiries!
-          <h2>Personal Interests</h2>
+          <h2 className="mt-4">Personal Interests</h2>
           <div style={{ lineHeight: 1.7 }}>
             I have a beautiful wife Samantha and a 6 month old son Miles. We
             love to do life together. It's not abnormal for us to get home from

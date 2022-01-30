@@ -5,7 +5,6 @@ const Resume = () => {
   const headerTitles = ["Experience", "Education", "Skills"];
   return (
     <div>
-      <h1>RESUME</h1>
       <div className="empty-color">
         <Overview />
         <Main headerTitles={headerTitles} />
