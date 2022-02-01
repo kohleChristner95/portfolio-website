@@ -14,7 +14,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="center-screen empty-color">
+    <div className="center-screen empty-color yellow-font">
       <form className="empty-color row center" onSubmit={handleSubmit}>
         <div className="form-group row">
           <label htmlFor="name">Name</label>

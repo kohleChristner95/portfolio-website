@@ -2,17 +2,17 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="empty-color full-height row">
-      <div className="label col-sm-4">
+    <div className="empty-color container-fluid yellow-font">
+      <div style={{ height: "15px" }}></div>
+      <div className="label">
         <img
-          className="img-fluid img-thumbnail"
+          className="img-fluid img-home-page"
           alt=""
           src="Sam-me-and-Miles.jpg"
         />
       </div>
-      <div className="label col-sm-4">
-        <h1>Home</h1>
-        <div style={{ lineHeight: 1.7 }}>
+      <div className="label">
+        <div className="my-4" style={{ lineHeight: 1.7 }}>
           Hi! Welcome to my website portfolio. My name is Kohle Christner and
           I'm a software developer based out of Shipshewana, Indiana. I
           currently help maintain several mobile apps at a RV tech company in
@@ -35,9 +35,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="label col-sm-4">
-        <img className="img-fluid img-thumbnail" alt="" src="Sam-and-I.jpg" />
+      <div className="label mb">
+        <img className="img-fluid img-home-page" alt="" src="Sam-and-I.jpg" />
       </div>
+      <div style={{ height: "15px" }}></div>
     </div>
   );
 };

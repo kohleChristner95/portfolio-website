@@ -21,7 +21,9 @@ const App = () => {
             <Contact />
           </Route>
         </Switch>
-        <footer>Made by Kohle Christner 🔥</footer>
+        <footer className="empty-color yellow-font">
+          Made by Kohle Christner 🔥
+        </footer>
       </div>
     </Router>
   );

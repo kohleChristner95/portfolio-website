@@ -1,10 +1,15 @@
 const Navbar = () => {
+  const navbarText = document.querySelectorAll(".nav-link");
+
+  const mouseHover = () => {
+    for (let x = 0; x < 4; x++) {
+      console.log(navbarText[x]);
+    }
+  };
+
   return (
-    <nav
-      style={{ backgroundColor: "rgb(29, 29, 102)" }}
-      className="navbar navbar-expand-md container-fluid navbar-light"
-    >
-      <div className="navbar-brand" style={{ fontSize: 30 }}>
+    <nav className="navbar navbar-expand-md container-fluid navbar-colors">
+      <div className="navbar-brand yellow-font" style={{ fontSize: 30 }}>
         Kohle Christner
       </div>
       <button
@@ -28,6 +33,8 @@ const Navbar = () => {
           <li className="navbar-item">
             <a
               className="nav-link"
+              onMouseEnter={() => mouseHover()}
+              // onMouseLeave={() => mouseLeave()}
               target="_blank"
               rel="noreferrer"
               href="https://github.com/kohleChristner95"
