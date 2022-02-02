@@ -1,11 +1,19 @@
-const Navbar = () => {
-  const navbarText = document.querySelectorAll(".nav-link");
+import { useState } from "react";
 
-  const mouseHover = () => {
-    for (let x = 0; x < 4; x++) {
-      console.log(navbarText[x]);
+const Navbar = () => {
+  const navLink = document.querySelectorAll(".custom-nav-link");
+  let [currentPage, setCurrentPage] = useState("/");
+  console.log(currentPage);
+
+  for (let x = 0; x < navLink.length; x++) {
+    console.log(navLink[x].text);
+    if (navLink[x].text === "Contact") {
+      navLink[x].ariaCurrent = "page";
+      console.log("d");
+      console.log(typeof navLink[x].href);
+      // Getting close to figuring out selected tab. Need to find a way to set a class (highlighted + underlined) based on the current page (aria-current="page")
     }
-  };
+  }
 
   return (
     <nav className="navbar navbar-expand-md container-fluid navbar-colors">
@@ -26,15 +34,13 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <a className="custom-nav-link" href="/">
               Home
             </a>
           </li>
           <li className="navbar-item">
             <a
-              className="nav-link"
-              onMouseEnter={() => mouseHover()}
-              // onMouseLeave={() => mouseLeave()}
+              className="custom-nav-link"
               target="_blank"
               rel="noreferrer"
               href="https://github.com/kohleChristner95"
@@ -43,12 +49,12 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/Resume">
+            <a className="custom-nav-link" href="/Resume">
               Resume
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/Contact">
+            <a className="custom-nav-link" href="/Contact">
               Contact
             </a>
           </li>
