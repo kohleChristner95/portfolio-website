@@ -49,3 +49,7 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
+
+.active {
+  border-bottom: 3px solid rgb(0, 68, 255);
+}

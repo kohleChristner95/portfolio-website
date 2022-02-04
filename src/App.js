@@ -11,13 +11,13 @@ const App = () => {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/home">
             <Home />
           </Route>
-          <Route path="/Resume">
+          <Route path="/resume">
             <Resume />
           </Route>
-          <Route path="/Contact">
+          <Route path="/contact">
             <Contact />
           </Route>
         </Switch>
