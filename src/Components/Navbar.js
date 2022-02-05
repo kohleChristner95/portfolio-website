@@ -24,7 +24,7 @@ const Navbar = () => {
               className="custom-nav-link"
               exact
               activeClassName="active"
-              to="/home"
+              to="/"
             >
               Home
             </NavLink>
