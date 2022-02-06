@@ -53,3 +53,8 @@
 .active {
   border-bottom: 3px solid rgb(0, 68, 255);
 }
+
+.paragraph-text {
+  margin-right: 15%;
+  margin-left: 15%;
+}
