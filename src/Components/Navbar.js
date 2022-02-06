@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md container-fluid navbar-colors">
-      <div className="navbar-brand yellow-font" style={{ fontSize: 30 }}>
+    <nav className="navbar navbar-expand-md container-fluid navbar-colors navbar-light">
+      <div className="navbar-brand" style={{ fontSize: 30, color: "#b9cbb0" }}>
         Kohle Christner
       </div>
       <button
