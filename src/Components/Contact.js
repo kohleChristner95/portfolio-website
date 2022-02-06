@@ -20,7 +20,11 @@ const Contact = () => {
           <label htmlFor="name">Name</label>
           <input
             className="form-control"
-            style={{backgroundColor: '#181a1b', borderColor: "#454b4e"}}
+            style={{
+              backgroundColor: "#181a1b",
+              borderColor: "#454b4e",
+              color: "#b9cbb0",
+            }}
             id="name"
             type="name"
             name="name"
@@ -31,8 +35,12 @@ const Contact = () => {
         <div className="form-group row my-1">
           <label htmlFor="email">E-mail</label>
           <input
-            className="form-control"
-            style={{backgroundColor: '#181a1b', borderColor: "#454b4e"}}
+            className="form-control yellow-font"
+            style={{
+              backgroundColor: "#181a1b",
+              borderColor: "#454b4e",
+              color: "#b9cbb0",
+            }}
             id="email"
             type="email"
             name="email"
@@ -44,7 +52,13 @@ const Contact = () => {
           <label htmlFor="message">Message</label>
           <textarea
             className="form-control"
-            style={{backgroundColor: '#181a1b', borderColor: "#454b4e", height: "100px"}}
+            style={{
+              backgroundColor: "#181a1b",
+              borderColor: "#454b4e",
+
+              color: "#b9cbb0",
+              height: "100px",
+            }}
             id="message"
             name="message"
             placeholder="Type your message here."
