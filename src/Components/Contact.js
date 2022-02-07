@@ -20,7 +20,7 @@ const Contact = () => {
         className="empty-color center"
         onSubmit={handleSubmit}
       >
-        <div className="form-group row my-1">
+        <div className="form-group my-3">
           <label htmlFor="name">Name</label>
           <input
             className="form-control"
@@ -36,7 +36,7 @@ const Contact = () => {
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
-        <div className="form-group row my-1">
+        <div className="form-group my-3">
           <label htmlFor="email">E-mail</label>
           <input
             className="form-control yellow-font"
@@ -52,7 +52,7 @@ const Contact = () => {
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
-        <div className="form-group row my-1">
+        <div className="form-group my-3">
           <label htmlFor="message">Message</label>
           <textarea
             className="form-control"
