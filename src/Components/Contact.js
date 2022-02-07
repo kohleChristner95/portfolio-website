@@ -15,7 +15,11 @@ const Contact = () => {
 
   return (
     <div className="center-screen empty-color yellow-font">
-      <form className="empty-color row center" onSubmit={handleSubmit}>
+      <form
+        style={{ width: "80vw" }}
+        className="empty-color center"
+        onSubmit={handleSubmit}
+      >
         <div className="form-group row my-1">
           <label htmlFor="name">Name</label>
           <input
@@ -55,7 +59,6 @@ const Contact = () => {
             style={{
               backgroundColor: "#181a1b",
               borderColor: "#454b4e",
-
               color: "#b9cbb0",
               height: "100px",
             }}
