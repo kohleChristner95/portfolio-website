@@ -12,8 +12,9 @@ const Main = ({ headerTitles }) => {
       responsibilities: [
         "Programmed config files written in JSON",
         "Maintained cross platform mobile apps written in Angular.js and Ionic Capacitor",
-        "Uploaded new builds and test flights to both the google play store and app store",
-        "Started as an entry-level developer and worked up to a team lead role within 10 months",
+        "Maintained legacy software working with an older version of Altia Design",
+        "Uploaded new app builds and test flights to both the google play store and app store",
+        "Started out as an entry-level developer and worked up to a team lead role within 1 year",
       ],
     },
     {

@@ -1,7 +1,7 @@
 const Overview = () => {
   return (
     <div>
-      <h1>Kohle Christner</h1>
+      <h1>Resume</h1>
       <div>Shipshewana, IN • 260-360-4793</div>
       <h6 className="mb-4">kohlechristner95@gmail.com</h6>
       <div className="container-sm my-4">

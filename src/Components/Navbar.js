@@ -1,10 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <nav
-      style={{ backgroundColor: "rgb(29, 29, 102)" }}
-      className="navbar navbar-expand-md container-fluid navbar-light"
-    >
-      <div className="navbar-brand" style={{ fontSize: 30 }}>
+    <nav className="navbar navbar-expand-md container-fluid navbar-colors navbar-light">
+      <div className="navbar-brand" style={{ fontSize: 30, color: "#b9cbb0" }}>
         Kohle Christner
       </div>
       <button
@@ -21,29 +20,46 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <NavLink
+              className="custom-nav-link"
+              exact
+              activeClassName="active"
+              to="/"
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="navbar-item">
             <a
-              className="nav-link"
               target="_blank"
               rel="noreferrer"
+              className="custom-nav-link"
+              exact
+              activeClassName="active"
               href="https://github.com/kohleChristner95"
             >
               Github
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/Resume">
+            <NavLink
+              className="custom-nav-link"
+              exact
+              activeClassName="active"
+              to="/resume"
+            >
               Resume
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/Contact">
+            <NavLink
+              className="custom-nav-link"
+              exact
+              activeClassName="active"
+              to="/contact"
+            >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
