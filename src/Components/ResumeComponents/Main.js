@@ -68,7 +68,6 @@ const Main = ({ headerTitles }) => {
   function mappingList(arg) {
     if (arg === "Experience") {
       for (const x of listArray) {
-        console.log(x.length);
         if (x.length === 3) {
           return x.map((list) => {
             return <List list={list} />;
