@@ -5,7 +5,7 @@ const Contact = () => {
 
   if (state.succeeded) {
     return (
-      <div className="center-screen empty-color full-height">
+      <div className="center-screen empty-color yellow-font full-height">
         <p>
           Thanks for the message! I'll get back to you within 1-2 business days.
         </p>
