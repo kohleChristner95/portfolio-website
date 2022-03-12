@@ -3,7 +3,8 @@ import React from "react";
 import List from "./List";
 
 const Main = ({ headerTitles }) => {
-  const listArray = [];
+
+  const listArray = [];  
   const experience = [
     {
       timeLine: "September 2020 - Present",
@@ -12,14 +13,14 @@ const Main = ({ headerTitles }) => {
       responsibilities: [
         "Programmed config files written in JSON",
         "Maintained cross platform mobile apps written in Angular.js and Ionic Capacitor",
-        "Maintained legacy software working with an older version of Altia Design",
+        "Maintained legacy software working with Altia Design software",
         "Uploaded new app builds and test flights to both the google play store and app store",
         "Started out as an entry-level developer and worked up to a team lead role within 1 year",
       ],
     },
     {
       timeLine: "April 2019 - September 2020",
-      jobTitle: "Fire Saftety Technician",
+      jobTitle: "Fire Safety Technician",
       location: "M&M Fire Protection & Security",
       responsibilities: [
         "Inspected, serviced, and installed fire extinguishers per NFPA standards",
@@ -32,12 +33,21 @@ const Main = ({ headerTitles }) => {
       jobTitle: "Assistant Service Manager",
       location: "Hawkins Water Tech.",
       responsibilities: [
-        "Coordinated water softener installation schedule",
-        "Communicated with customers with questions regarding water quality needs",
-        "Recorded customer information on Watertight software",
+        "Independently coordinated water softener installation schedule",
         "Coordinated service schedule with service manager",
+        "Took customer service calls for questions regarding water quality needs",
+        "Recorded customer information on Watertight software"
       ],
     },
+    {
+      timeLine: "January 2016 - April 2018",
+      jobTitle: "Delivery / Warehouse Personnel",
+      location: "Hawkins Water Tech.",
+      responsibilities: [
+        "Delivered water softener salt and bottled water to both residential and commercial customers",
+        "Maintained inventory and helped restore used equipment to be reused as rentals for customers"
+      ],
+    }
   ];
 
   const education = [
@@ -61,6 +71,7 @@ const Main = ({ headerTitles }) => {
     "Clear communication",
     "Self-driven",
     "Strong desire to learn",
+    "Proven ability to learn new skills"
   ];
 
   listArray.push(experience, education, skills);
@@ -68,8 +79,7 @@ const Main = ({ headerTitles }) => {
   function mappingList(arg) {
     if (arg === "Experience") {
       for (const x of listArray) {
-        console.log(x.length);
-        if (x.length === 3) {
+        if (x.length === 4) {
           return x.map((list) => {
             return <List list={list} />;
           });
@@ -87,7 +97,7 @@ const Main = ({ headerTitles }) => {
     }
     if (arg === "Skills") {
       for (const x of listArray) {
-        if (x.length > 3) {
+        if (x.length > 4) {
           return (
             <div className="container">
               {x.map((list) => {

@@ -8,7 +8,7 @@ const Home = () => {
         <img
           className="img-fluid img-home-page"
           alt=""
-          src="Sam-me-and-Miles.jpg"
+          src="/img/Sam-me-and-Miles.JPG"
         />
       </div>
       <div className="label">
@@ -37,7 +37,11 @@ const Home = () => {
         </div>
       </div>
       <div className="label mb">
-        <img className="img-fluid img-home-page" alt="" src="Sam-and-I.jpg" />
+        <img
+          className="img-fluid img-home-page"
+          alt=""
+          src="/img/Sam-and-I.JPG"
+        />
       </div>
       <div style={{ height: "15px" }}></div>
     </div>
