@@ -3,8 +3,7 @@ import React from "react";
 import List from "./List";
 
 const Main = ({ headerTitles }) => {
-
-  const listArray = [];  
+  const credentials = [];
   const experience = [
     {
       timeLine: "September 2020 - Present",
@@ -36,7 +35,7 @@ const Main = ({ headerTitles }) => {
         "Independently coordinated water softener installation schedule",
         "Coordinated service schedule with service manager",
         "Took customer service calls for questions regarding water quality needs",
-        "Recorded customer information on Watertight software"
+        "Recorded customer information on Watertight software",
       ],
     },
     {
@@ -45,9 +44,9 @@ const Main = ({ headerTitles }) => {
       location: "Hawkins Water Tech.",
       responsibilities: [
         "Delivered water softener salt and bottled water to both residential and commercial customers",
-        "Maintained inventory and helped restore used equipment to be reused as rentals for customers"
+        "Maintained inventory and helped restore used equipment to be reused as rentals for customers",
       ],
-    }
+    },
   ];
 
   const education = [
@@ -71,14 +70,14 @@ const Main = ({ headerTitles }) => {
     "Clear communication",
     "Self-driven",
     "Strong desire to learn",
-    "Proven ability to learn new skills"
+    "Proven ability to learn new skills",
   ];
 
-  listArray.push(experience, education, skills);
+  credentials.push(experience, education, skills);
 
-  function mappingList(arg) {
-    if (arg === "Experience") {
-      for (const x of listArray) {
+  function mappingList(header) {
+    if (header === "Experience") {
+      for (const x of credentials) {
         if (x.length === 4) {
           return x.map((list) => {
             return <List list={list} />;
@@ -86,8 +85,8 @@ const Main = ({ headerTitles }) => {
         }
       }
     }
-    if (arg === "Education") {
-      for (const x of listArray) {
+    if (header === "Education") {
+      for (const x of credentials) {
         if (x.length === 2) {
           return x.map((list) => {
             return <List list={list} />;
@@ -95,8 +94,8 @@ const Main = ({ headerTitles }) => {
         }
       }
     }
-    if (arg === "Skills") {
-      for (const x of listArray) {
+    if (header === "Skills") {
+      for (const x of credentials) {
         if (x.length > 4) {
           return (
             <div className="container">
