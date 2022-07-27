@@ -11,9 +11,9 @@ const Main = ({ headerTitles }) => {
       location: "Firefly Integrations",
       responsibilities: [
         "Programmed config files written in JSON",
-        "Maintained cross platform mobile apps written in Angular.js and Ionic Capacitor",
+        "Maintained cross platform mobile apps using AngularJS and Ionic Capacitor",
         "Maintained legacy software working with Altia Design software",
-        "Uploaded new app builds and test flights to both the google play store and app store",
+        "Uploaded new app builds and test flights to both the Google Play Store and Apple App Store",
         "Started out as an entry-level developer and worked up to a team lead role within 1 year",
       ],
     },

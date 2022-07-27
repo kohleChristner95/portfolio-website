@@ -23,16 +23,17 @@ const Home = () => {
           . Being self taught, I have a huge passion for learning and expanding
           my programming skills. I have experience using javascript with ionic
           capacitor as well as devops experience deploying new app releases to
-          the android and iOS stores. Please take a look at my github account to
+          the Google Play Store and Apple App Store. Please take a look at my Github account to
           see my latest projects or contact me for inquiries!
           <div>&nbsp;</div>
           <h2>About</h2>
           <div style={{ lineHeight: 1.7 }}>
-            I have a beautiful wife Samantha and a 6 month old son Miles. We
-            love to do life together. It's not abnormal for us to get home from
-            work and just chill on the floor while we have something playing on
-            tv. Other personal interests I have are hunting, video games, and
-            traveling with my family.
+            I have a beautiful wife Sam and a 1 year old son Miles. We love to
+            do life together. We are active in our local church serving in
+            various ways. It's not abnormal for us to get home from work and
+            just chill on the floor while we have something playing on tv. Other
+            personal interests I have are hunting, video games, and traveling
+            with Sam and Miles.
           </div>
         </div>
       </div>
