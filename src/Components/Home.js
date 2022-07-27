@@ -23,7 +23,7 @@ const Home = () => {
           . Being self taught, I have a huge passion for learning and expanding
           my programming skills. I have experience using javascript with ionic
           capacitor as well as devops experience deploying new app releases to
-          the Google Play Store and Apple App Store. Please take a look at my Github account to
+          the Google Play Store and the Apple App Store. Please take a look at my Github account to
           see my latest projects or contact me for inquiries!
           <div>&nbsp;</div>
           <h2>About</h2>
